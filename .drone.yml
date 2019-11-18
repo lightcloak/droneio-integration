@@ -1,0 +1,27 @@
+kind: pipeline
+type: docker
+name: sample
+
+steps:
+# - name: tests
+#   image: node:10
+#   commands:
+#   - cd /drone/src/
+#   - npm i
+#   - npm run test
+- name: npm publish
+  image: node:10
+  environment:
+    PPP:
+      from_secret: ppp
+  commands:
+    - cd /drone/src/
+    - ls -l
+    # - node read.js --token $$PPP
+    - echo 1. Twoj sekret to $$PPP
+
+
+
+
+
+
