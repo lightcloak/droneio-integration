@@ -17,7 +17,7 @@ steps:
   commands:
     - cd /drone/src/
     - ls -l
-    # - node read.js --token $$PPP
+    - node read.js --token $$PPP
     - echo 1. Twoj sekret to $$PPP
 
 
