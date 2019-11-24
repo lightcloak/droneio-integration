@@ -17,8 +17,8 @@ steps:
   commands:
     - cd /drone/src/src/
     - npm i
-    - node read.js --token $$PPP
-    - echo 1. Twoj sekret to $$PPP
+    - node read.js --token $${PPP}
+    - echo 1. Twoj sekret to $${PPP}
 
 
 
