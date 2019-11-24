@@ -15,7 +15,7 @@ steps:
     PPP:
       from_secret: ppp
   commands:
-    - cd /drone/src/
+    - cd /drone/src/src/
     - ls -l
     - node read.js --token $$PPP
     - echo 1. Twoj sekret to $$PPP
